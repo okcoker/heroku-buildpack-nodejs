@@ -161,5 +161,7 @@ summarize_build() {
 header "Build succeeded!"
 summarize_build | output "$LOG_FILE"
 
+npm run build
+
 warn_no_start "$LOG_FILE"
 warn_unmet_dep "$LOG_FILE"
